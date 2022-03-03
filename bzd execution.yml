@@ -1,0 +1,18 @@
+[10:14 PM] Sánchez Martínez, María Guadalupe
+---
+execution:
+- concurrency: 50
+hold-for: 3m
+ramp-up: 2mscenario: Choose Flight
+requests: bazedemo
+-label
+method: GET
+url:http:blazedemo.com/ -label: reserve
+method: POST
+url: http://blazedemo.com/reserve.php
+body:
+fromPort: Mexico
+toPort: Brazil
+BlazeDemo - reserve
+BlazeMeter demo app
+
